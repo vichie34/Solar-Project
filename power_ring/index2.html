@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="css/global2.css" />
+  <link rel="stylesheet" href="css/index2.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aeonik:wght@400;500;700&display=swap" />
+</head>
+
+<body>
+  <div class="desktop-15">
+    <main class="frame-main">
+      <img class="image-6-icon4" alt="" src="./public/image-6@2x.png" />
+
+      <img class="vector-icon" alt="" src="./public/vector-1.svg" />
+    </main>
+    <header class="top-nav4">
+      <img class="layer-1-icon4" loading="lazy" alt="" src="./assets/layer-13.svg" />
+
+      <nav class="main-nav-item-group">
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-items-container">
+          <div class="main-nav-item17">
+            <div class="about-us-wrapper10">
+              <a class="about-us16" href="home.html">Home</a>
+            </div>
+            <div class="main-nav-item-background"></div>
+          </div>
+          <div class="main-nav-item18">
+            <div class="about-us-wrapper11">
+              <a class="about-us17" href="installers.html">Installers</a>
+            </div>
+            <div class="main-nav-item-child12"></div>
+          </div>
+          <div class="main-nav-item19">
+            <div class="about-us-wrapper12">
+              <a class="about-us18" href="https://www.coderstriangle">About Us</a>
+            </div>
+            <div class="main-nav-item-child13"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="page-header">
+      <div class="back-container1">
+        <div class="back4">
+          <div class="vuesaxlineararrow-left-wrapper1">
+            <img class="vuesaxlineararrow-left-icon4" loading="lazy" alt="" src="./public/vuesaxlineararrowleft3.svg" />
+          </div>
+          <div class="go-back-wrapper2">
+            <a class="go-back4">Go back</a>
+          </div>
+        </div>
+        <div class="title-container">
+          <div class="how-many-hours-of-power-do-you-group">
+            <h2 class="how-many-hours1">
+              How many hours of power do you need?
+            </h2>
+            <div class="dropdown-container">
+              <div class="dropdown">
+                <div class="options31">
+                  <div class="frame-parent22">
+                    <input class="frame-child1" placeholder="2h hours" type="text" />
+
+                    <img class="vuesaxlineararrow-right-icon3" alt="" src="./public/vuesaxlineararrowright.svg" />
+                  </div>
+                </div>
+                <div class="dropdown-inner">
+                  <div class="frame-parent23">
+                    <input class="frame-child2" placeholder="12 hours" type="text" />
+
+                    <img class="vuesaxlineararrow-right-icon4" loading="lazy" alt=""
+                      src="./public/vuesaxlineararrowright.svg" />
+                  </div>
+                </div>
+                <div class="dropdown-child">
+                  <div class="frame-parent24">
+                    <input class="frame-child3" placeholder="8 hours" type="text" />
+
+                    <img class="vuesaxlineararrow-right-icon5" loading="lazy" alt=""
+                      src="./public/vuesaxlineararrowright.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-button-container1">
+          <div class="button7">
+            <b class="order-now7">Proceed</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Get the hamburger menu icon and nav items container
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navItemsContainer = document.querySelector('.main-nav-item-container');
+
+    // Get the hamburger menu icon and nav items container
+    // Add event listener to hamburger menu icon
+    hamburgerMenu.addEventListener('click', () => {
+      // Toggle the 'active' class on the hamburger menu icon
+      hamburgerMenu.classList.toggle('active');
+
+      // Toggle the display of nav items
+      if (hamburgerMenu.classList.contains('active')) {
+        navItemsContainer.style.display = 'block';
+      } else {
+        // navItemsContainer.style.display = 'none';
+      }
+    });
+
+    // Add event listener to nav items to close the menu when clicked
+    navItemsContainer.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        navItemsContainer.style.display = 'none';
+        hamburgerMenu.classList.remove('active');
+      }
+    });
+
+    // Add event listener to document to close the menu when clicked outside
+    document.addEventListener('click', (e) => {
+      if (!hamburgerMenu.contains(e.target) && !navItemsContainer.contains(e.target)) {
+        // navItemsContainer.style.display = 'none';
+        hamburgerMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+
+</html>

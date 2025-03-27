@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="css/global2.css" />
+    <link rel="stylesheet" href="css/desktop2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aeonik:wght@400;500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-3">
+      <main class="image-6-container">
+        <img class="image-6-icon3" alt="" src="./assets/image-6@2x.png" />
+
+        <img class="frame-item" alt="" src="./assets/vector-1.svg" />
+      </main>
+      <header class="top-nav3">
+        <img
+          class="layer-1-icon3"
+          loading="lazy"
+          alt=""
+          src="./assets/layer-13.svg"
+        />
+
+        <nav class="main-nav1">
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-items-container">
+            <div class="main-nav-item13">
+              <div class="about-us-wrapper7">
+                <a class="about-us12" href="index.html">Home</a>
+              </div>
+              <div class="main-nav-item-child8"></div>
+            </div>
+            <div class="main-nav-item14">
+              <div class="about-us-wrapper8">
+                <a class="about-us13" href="installers.html">Installers</a>
+              </div>
+              <div class="main-nav-item-child9"></div>
+            </div>
+            <div class="main-nav-item15">
+              <div class="about-us-wrapper9">
+                <a class="about-us14" href="https://www.coderstriangle.com"
+                  >About Us</a
+                >
+              </div>
+              <div class="main-nav-item-child10"></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="back-button-wrapper">
+        <div class="back-button">
+          <div class="back3">
+            <div class="vuesaxlineararrow-left-frame">
+              <a href="order2.html">
+                <img
+                  class="vuesaxlineararrow-left-icon3"
+                  loading="lazy"
+                  alt=""
+                  src="./public/vuesaxlineararrowleft3.svg"
+                />
+              </a>
+            </div>
+            <div class="go-back-wrapper1">
+              <a class="go-back3" href="order2.html">Go back</a>
+            </div>
+          </div>
+          <div class="back-button-inner">
+            <div class="how-many-hours-of-power-do-you-parent">
+              <h2 class="how-many-hours">
+                How many hours of power do you need?
+              </h2>
+              <div class="options-wrapper">
+                <div class="options29">
+                  <div class="options30">
+                    <div class="option-item1">
+                      <input
+                        class="option-name"
+                        placeholder="2h hours"
+                        type="text"
+                      />
+
+                      <img
+                        class="vuesaxlineararrow-right-icon"
+                        alt=""
+                        src="./public/vuesaxlineararrowright.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="options-inner">
+                    <div class="frame-parent20">
+                      <input
+                        class="frame-inner"
+                        placeholder="12 hours"
+                        type="text"
+                      />
+
+                      <img
+                        class="vuesaxlineararrow-right-icon1"
+                        loading="lazy"
+                        alt=""
+                        src="./public/vuesaxlineararrowright.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="options-child">
+                    <div class="frame-parent21">
+                      <input
+                        class="frame-input"
+                        placeholder="8 hours"
+                        type="text"
+                      />
+
+                      <img
+                        class="vuesaxlineararrow-right-icon2"
+                        loading="lazy"
+                        alt=""
+                        src="./public/vuesaxlineararrowright.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-wrapper">
+            <div class="button6">
+              <b class="order-now6">Proceed</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const navItemsContainer = document.querySelector(".main-nav1");
+
+      hamburgerMenu.addEventListener("click", () => {
+        hamburgerMenu.classList.toggle("active");
+
+        const navItems = document.querySelectorAll(
+          ".main-nav1 > div:not(.hamburger-menu)"
+        );
+        navItems.forEach((navItem) => {
+          navItem.style.display = hamburgerMenu.classList.contains("active")
+            ? "block"
+            : "none";
+        });
+      });
+    </script>
+  </body>
+</html>

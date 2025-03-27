@@ -1,0 +1,47 @@
+.vuesaxlineararrow-left-icon2 {
+  height: 32px;
+  width: 32px;
+  position: relative;
+}
+.vuesaxlineararrow-left-container {
+  height: 52px;
+  width: 52px;
+  border-radius: var(--br-81xl);
+  background-color: var(--primary-green);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+}
+.go-back2 {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 76px;
+}
+.back2,
+.go-back-frame {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.go-back-frame {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-sm) 0 0;
+}
+.back2 {
+  width: 145px;
+  flex-direction: row;
+  gap: var(--gap-mid);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--this-is-the-button-text-size);
+  color: var(--shade-white);
+  font-family: var(--body-text-6-regular);
+}

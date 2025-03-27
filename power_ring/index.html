@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="css/global1.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aeonik:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="public/fontawesome-free-6.5.1-web/css/all.css"
+    />
+    <title>Home | Power Ring</title>
+  </head>
+  <body>
+    <div class="home">
+      <img class="image-6-icon1" alt="" src="./public/image-61@2x.png" />
+
+      <section class="main-navigation">
+        <header class="top-nav2">
+          <div class="navbar">
+            <div class="logo">
+              <img
+                class="layer-1-icon2"
+                loading="lazy"
+                alt=""
+                src="./public/layer-12.svg"
+                id="layer1"
+              />
+            </div>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="installers.html">Installers</a></li>
+              <li><a href="">About Us</a></li>
+            </ul>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+
+          <div class="dropdown_menu">
+            <li><a href="index.html" class="menu_navitem">Home</a></li>
+            <li><a href="installers.html" class="menu_navitem">Installers</a></li>
+            <li><a href="" class="menu_navitem">About Us</a></li>
+          </div>
+        </header>
+        <div class="main-navigation-inner">
+          <div class="wrapper-clean-power-icon-parent">
+            <div class="wrapper-clean-power-icon">
+              <img
+                class="clean-power-icon"
+                alt=""
+                src="./public2/clean-power-icon.svg"
+                data-scroll-to="cleanPowerIcon"
+              />
+            </div>
+            <h1 class="clean-power-all">Clean Power all day long</h1>
+          </div>
+        </div>
+      </section>
+      <section class="order-button-wrapper-wrapper">
+        <div class="order-button-wrapper">
+          <div class="wrapper-order-button-icon">
+            <img
+              class="order-button-icon"
+              loading="lazy"
+              alt=""
+              src="./public/vector-2.svg"
+            />
+          </div>
+          <button class="button29">
+            <b class="order-now27"><a href="order.html">Order Now</a></b>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var layer1 = document.getElementById("layer1");
+      if (layer1) {
+        layer1.addEventListener("click", function () {
+          var anchor = document.querySelector(
+            "[data-scroll-to='cleanPowerIcon']"
+          );
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+    </script>
+    <script>
+      const toogleBtn = document.querySelector(".toggle_btn")
+      const toogleBtnIcon = document.querySelector(".toggle_btn i")
+      const dropDownMenu = document.querySelector(".dropdown_menu")
+
+      toogleBtn.onclick = function () {
+       dropDownMenu.classList.toggle("open")
+       const isOpen = dropDownMenu.classList.contains("open")
+
+       toogleBtnIcon.classList = isOpen
+       ? "fa-solid fa-xmark"
+       : "fa-solid fa-bars"
+      }
+   </script>
+   <script src="public/fontawesome-free-6.5.1-web/js/all.js"></script>
+  </body>
+</html>

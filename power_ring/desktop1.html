@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/desktop1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aeonik:wght@400;500;700&display=swap"
+    />
+  </head>
+
+  <body>
+    <div class="desktop-14">
+      <main class="image-6-group">
+        <img class="image-6-icon2" alt="" src="./public/image-61@2x.png" />
+
+        <img class="shape-icon" alt="" src="./public/vector-1.svg" />
+      </main>
+      <header class="top-nav2">
+        <img
+          class="layer-1-icon2"
+          loading="lazy"
+          alt=""
+          src="./public/layer-11.svg"
+        />
+
+        <nav class="main-nav1">
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-items-container">
+            <div class="main-nav-item9">
+              <div class="about-us-wrapper3">
+                <a class="about-us8" href="index.html">Home</a>
+              </div>
+              <div class="nav-item-background1"></div>
+            </div>
+            <div class="main-nav-item10">
+              <div class="about-us-wrapper4">
+                <a class="about-us9" href="installers.html">Installers</a>
+              </div>
+              <div class="main-nav-item-child3"></div>
+            </div>
+            <div class="main-nav-item11">
+              <div class="about-us-wrapper5">
+                <a class="about-us10" href="https://www.coderstriangle.com"
+                  >About Us</a
+                >
+              </div>
+              <div class="main-nav-item-child4"></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="breadcrumb">
+        <div class="back-navigation">
+          <div class="back3">
+            <div class="vuesaxlineararrow-left-frame">
+              <a href="index.html">
+                <img
+                  class="vuesaxlineararrow-left-icon3"
+                  loading="lazy"
+                  alt=""
+                  src="./public/vuesaxlineararrowleft1.svg"
+              /></a>
+            </div>
+            <div class="go-back-wrapper1">
+              <a class="go-back3" href="index.html">Go back</a>
+            </div>
+          </div>
+          <div class="form">
+            <div class="residency-parent">
+              <div class="residency">
+                <h1 class="where-do-you1">Where do you reside?</h1>
+                <div class="dropdown">
+                  <!-- <div class="options1"> -->
+                  <div class="dropdown-content">
+                    <div class="ethereum-option">
+                      <div class="ethereum1">
+                        <input
+                          list="options"
+                          placeholder="Select State"
+                          id="text"
+                          name="name"
+                        />
+                        <datalist id="options">
+                          <option value="Abia"></option>
+                          <option value="Adamawa"></option>
+                          <option value="Akwa Ibom"></option>
+                          <option value="Anambra"></option>
+                          <option value="Bauchi"></option>
+                          <option value="Bayelsa"></option>
+                          <option value="Benue"></option>
+                          <option value="Borno"></option>
+                          <option value="Cross river"></option>
+                          <option value="Delta"></option>
+                          <option value="Ebonyi"></option>
+                          <option value="Edo"></option>
+                          <option value="Ekiti"></option>
+                          <option value="Enugu"></option>
+                          <option value="Gombe"></option>
+                          <option value="Imo"></option>
+                          <option value="Jigawa"></option>
+                          <option value="Kaduna"></option>
+                          <option value="Kano"></option>
+                          <option value="Kastina"></option>
+                          <option value="Kebbi"></option>
+                          <option value="Kogi"></option>
+                          <option value="Kwara"></option>
+                          <option value="Lagos"></option>
+                          <option value="Nassarawa"></option>
+                          <option value="Niger"></option>
+                          <option value="Ogun"></option>
+                          <option value="Ondo"></option>
+                          <option value="Osun"></option>
+                          <option value="Oyo"></option>
+                          <option value="Plateau"></option>
+                          <option value="Rivers"></option>
+                          <option value="Sokoto"></option>
+                          <option value="Taraba"></option>
+                          <option value="Yobe"></option>
+                          <option value="Zamfara"></option>
+                        </datalist>
+                      </div>
+                    </div>
+                    <img
+                      class="vuesaxlineararrow-down-icon1"
+                      alt=""
+                      src="./public/vuesaxlineararrowdown.svg"
+                    />
+                  </div>
+                  <!-- </div> -->
+                </div>
+              </div>
+              <div class="action">
+                <button class="button13">
+                  <b class="order-now11"><a href="desktop2.html">Proceed</a></b>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get the hamburger menu icon
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const navItemsContainer = document.querySelector(".main-nav1");
+
+      // Add event listener to hamburger menu icon
+      hamburgerMenu.addEventListener("click", () => {
+        // Toggle the 'active' class on the hamburger menu icon
+        hamburgerMenu.classList.toggle("active");
+
+        // Toggle the display of nav items
+        const navItems = document.querySelectorAll(
+          ".main-nav1 > div:not(.hamburger-menu)"
+        );
+        navItems.forEach((navItem) => {
+          navItem.style.display = hamburgerMenu.classList.contains("active")
+            ? "block"
+            : "none";
+        });
+      });
+    </script>
+
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
