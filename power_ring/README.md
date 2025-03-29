@@ -18,6 +18,34 @@ Power Ring is a web-based project designed to help individuals purchase solar pl
 ## Project Structure
 power_ring/ ├── index.html # Main landing page ├── installers.html # Page for hiring installers ├── order.html # Page for ordering solar plants ├── css/ # Stylesheets │ ├── global1.css │ ├── home.css ├── public/ # Public assets │ ├── fontawesome-free-6.5.1-web/ # FontAwesome icons │ ├── image-61@2x.png │ ├── layer-12.svg │ ├── vector-2.svg ├── assets/ # Additional images and icons ├── README.md # Project documentation
 
+## How to Use
+
+1. Open the `index.html` file in your browser to access the homepage.
+2. Navigate through the menu to explore features:
+   - **Home**: Learn about the platform.
+   - **Installers**: Hire professional solar installers.
+   - **Order Now**: Purchase solar plants.
+
+## Installation
+
+No additional setup is required. Simply clone the repository and open the `index.html` file in your browser.
+
+```bash
+git clone <repository-url>
+cd power_ring
+open [index.html](http://_vscodecontentref_/1)
+```
+
+Future Enhancements
+Add a user authentication system for personalized experiences.
+Integrate payment gateways for seamless transactions.
+Expand the installer database for broader coverage.
+License
+This project is open-source and available under the MIT License.
+
+Contact
+For inquiries or feedback, please contact us at vykchuma@gmail.com. ```
+
 Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
 
 To preview and run the project on your device:
