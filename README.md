@@ -1,4 +1,4 @@
-# Power Ring
+# Light Up  
 
  LightUp is a web-based project under the company Power Ring, designed to help individuals purchase solar plants and hire professional installers for seamless installation. The platform also allows users to hire potential solar installers in their environment, ensuring user satisfaction.
 
